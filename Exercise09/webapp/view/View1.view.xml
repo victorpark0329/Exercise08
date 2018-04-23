@@ -1,0 +1,46 @@
+<mvc:View controllerName="sap.sapx05.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="Exercise 09">
+				<content>
+					<Panel headerText="Enter Name">
+						<content>
+							<l:Grid>
+								<FlexBox alignItems="Center" justifyContent="SpaceAround">
+									<items>
+										<Label id="lblFirstName" text="First Name"></Label>
+										<Input id="inpFirstName"></Input>
+									</items>
+									<layoutData>
+										<l:GridData span="L2 M6 S12"></l:GridData>
+									</layoutData>
+								</FlexBox>
+								<FlexBox alignItems="Center" justifyContent="SpaceAround">
+									<items>
+										<Label id="lblLastName" text="Last Name"></Label>
+										<Input id="inpLastName"></Input>
+									</items>
+									<layoutData>
+										<l:GridData span="L2 M6 S12"></l:GridData>
+									</layoutData>
+								</FlexBox>
+								<FlexBox alignItems="Center" justifyContent="SpaceAround">
+									<items>
+										<Button id="btnSubmit" text="Submit" press="onBtnClick"></Button>
+									</items>
+									<layoutData>
+										<l:GridData linebreakL="true" span="L4 M10 S12"></l:GridData>
+									</layoutData>
+								</FlexBox>
+							</l:Grid>
+						</content>
+					</Panel>
+					<Panel headerText="Added Views" expandable="true">
+						<content></content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
